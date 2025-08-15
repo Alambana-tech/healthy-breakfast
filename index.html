@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Breakfast Discussion</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
+    <style>
+        :root {
+            --paggih: #4CAF50;
+            --faith: #2196F3;
+            --syakir: #FF9800;
+            --bg: #f8f9fa;
+            --text: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #4CAF50, #2196F3, #FF9800);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .dialogue {
+            margin-bottom: 40px;
+        }
+
+        .message {
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            border-radius: 15px;
+            position: relative;
+            max-width: 85%;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .paggih { background: #e8f5e9; border-left: 4px solid var(--paggih); }
+        .faith { background: #e3f2fd; border-left: 4px solid var(--faith); margin-left: 15%; }
+        .syakir { background: #fff3e0; border-left: 4px solid var(--syakir); margin-left: 30%; }
+
+        .name-tag {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .name-tag::before {
+            content: "•";
+            margin-right: 8px;
+            font-size: 24px;
+        }
+
+        .paggih .name-tag { color: var(--paggih); }
+        .faith .name-tag { color: var(--faith); }
+        .syakir .name-tag { color: var(--syakir); }
+
+        .takeaways {
+            background: #f5f7f9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            margin-right: 10px;
+        }
+
+        .pros { color: #4CAF50; }
+        .cons { color: #f44336; }
+        .adjust { color: #2196F3; }
+
+        .point {
+            display: flex;
+            align-items: start;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .point:hover {
+            transform: translateX(5px);
+            background: rgba(255,255,255,0.7);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .final {
+            background: #fffde7;
+            border-left: 4px solid #FFC107;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .message {
+                max-width: 100%;
+                margin-left: 0 !important;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Breakfast Planning Discussion</h1>
+            <p>A conversation about healthy breakfast choices</p>
+        </div>
+
+        <div class="dialogue">
+            <div class="message paggih">
+                <div class="name-tag">Paggih</div>
+                <p>"Guys, I'm planning to make rice, eggs, chicken soup, and fried chicken for breakfast. What's your take?"</p>
+            </div>
+
+            <div class="message faith">
+                <div class="name-tag">Faith</div>
+                <p>"Honestly, positive first: it's a protein-packed meal! Eggs give you choline for brain health, chicken soup hydrates you, and rice fuels your morning. Plus, vegetables in the soup add vitamins."</p>
+            </div>
+
+            <div class="message syakir">
+                <div class="name-tag">Syakir</div>
+                <p>"Hmm, but the fried chicken worries me. Deep-frying adds trans fats, which could harm heart health long-term. Also, isn't this combo too heavy for breakfast? Rice + fried chicken might cause a sugar crash later."</p>
+            </div>
+
+            <div class="message faith">
+                <div class="name-tag">Faith</div>
+                <p>"True, but we can tweak it: boil or poach the eggs instead of frying, and bake the chicken with herbs. That keeps the protein lean!"</p>
+            </div>
+
+            <div class="message paggih">
+                <div class="name-tag">Paggih</div>
+                <p>"Great point! What if I use brown rice instead? More fiber, less glycemic spike."</p>
+            </div>
+
+            <div class="message syakir">
+                <div class="name-tag">Syakir</div>
+                <p>"Better! But let's talk portions. Half a cup of rice max, and load up the soup with greens like spinach or carrots. Skip heavy oils."</p>
+            </div>
+
+            <div class="message faith">
+                <div class="name-tag">Faith</div>
+                <p>"Agreed. And if we use skinless chicken breast instead of thighs, we cut saturated fat. Win-win!"</p>
+            </div>
+
+            <div class="message paggih">
+                <div class="name-tag">Paggih</div>
+                <p>"So final plan: baked chicken breast, poached eggs, veggie-loaded soup, and brown rice. Balanced?"</p>
+            </div>
+
+            <div class="message syakir">
+                <div class="name-tag">Syakir</div>
+                <p>"Much healthier! Now it's high-protein, fiber-rich, and avoids unhealthy fats. I'd eat this!"</p>
+            </div>
+        </div>
+
+        <div class="takeaways">
+            <h2 class="section-title">
+                <span style="color: var(--paggih)">●</span> Key Takeaways
+            </h2>
+
+            <div class="point pros">
+                <span style="font-size: 1.2rem; margin-right: 10px;">✅</span>
+                <div>
+                    <strong>Pros:</strong>
+                    <ul>
+                        <li>High protein (eggs + chicken) sustains energy</li>
+                        <li>Veggie soup adds hydration + micronutrients</li>
+                        <li>Customizable for nutrition (baked > fried)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="point cons">
+                <span style="font-size: 1.2rem; margin-right: 10px;">⛔</span>
+                <div>
+                    <strong>Cons (Original Plan):</strong>
+                    <ul>
+                        <li>Fried chicken → unhealthy fats</li>
+                        <li>White rice → rapid carbs → crash risk</li>
+                        <li>Overeating → sluggishness</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="point adjust">
+                <span style="font-size: 1.2rem; margin-right: 10px;">🔍</span>
+                <div>
+                    <strong>Healthy Adjustments:</strong>
+                    <ul>
+                        <li>Bake or grill chicken (no skin)</li>
+                        <li>Switch to brown rice/quinoa</li>
+                        <li>Load soup with non-starchy veggies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="final">
+                <p><strong>Faith's Final Words:</strong> "Quality > cooking method! With smart tweaks, this meal is both nourishing and satisfying."</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
